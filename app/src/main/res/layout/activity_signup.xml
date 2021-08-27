@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signupActivity"
+    android:background="#FDD835"
+    android:weightSum="3">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/signup"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <EditText
+            android:inputType="textPersonName"
+            android:id="@+id/usernameTxtlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="UserName"
+            android:ems="20"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+        <LinearLayout
+            android:id="@+id/namelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernameTxtlogin"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:inputType="textPersonName"
+                android:id="@+id/nameTxtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:ems="10"
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+            <EditText
+                android:inputType="textPersonName"
+                android:id="@+id/familyNameTxtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Surname"
+                android:ems="10"
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namelayout"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/homephoneTxtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Home Number"
+                android:ems="10"
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/mobilephoneTxtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:ems="10"
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+
+        </LinearLayout>
+        <EditText
+            android:inputType="textPersonName"
+            android:layout_below="@id/phoneLayout"
+            android:id="@+id/addressTxtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:ems="20"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+
+        <LinearLayout
+            android:id="@+id/emailAddressTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressTxtLogin"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/emailTxtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:ems="10"
+                android:padding="20dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+            <EditText
+                android:inputType="textPersonName"
+                android:id="@+id/certificateTxtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Birth certificate"
+                android:ems="10"
+                android:padding="20dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+
+        </LinearLayout>
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/passwordTxtLogin"
+            android:layout_below="@id/emailAddressTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:padding="20dp"
+            android:hint="Password"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem" />
+
+        <Button
+            android:id="@+id/enterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordTxtLogin"
+            android:layout_centerHorizontal="true"
+            android:text="SUBMIT"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:ems="15"/>
+        <TextView
+            android:id="@+id/gotoSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If You Had signup CLICK Here to Sign-In!"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/enterBtn"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

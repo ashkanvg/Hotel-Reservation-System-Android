@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkReserve"
+    android:background="#FDD835">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            app:srcCompat="@drawable/logo2" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/doneAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Your Reservation is Done!"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+        <LinearLayout
+            android:id="@+id/roomNumberLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doneAlarm"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/roomNumberTitr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ROOM NUMBER = "
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/roomNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="101"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bedCountLayoutEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roomNumberLayout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/bedCountTitr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BED COUNT = "
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/bedCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="2"/>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/backtoHotelList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bedCountLayoutEnd"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Back To Hotel List"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/gotoReserveList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backtoHotelList"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Go To Reserve List"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

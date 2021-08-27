@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/headerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME (CLICK HERE FOR RESERVE LIST)"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#FDD835"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                app:srcCompat="@drawable/hotelpic"
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:text="Hotel Enghelab "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <RatingBar
+                android:id="@+id/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:numStars="7"
+                android:stepSize="1"
+                android:rating="4"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RatingBar"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:background="#FDD835"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Tehran"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/locationCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RatingBar"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/location"
+                android:background="#FDD835"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Tehran"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/atributeTxt"
+                android:layout_below="@id/location"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:textSize="10dp">
+                <CheckBox
+                    android:id="@+id/wifiCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI" />
+
+                <CheckBox
+                    android:id="@+id/parkingCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parking" />
+
+                <CheckBox
+                    android:id="@+id/seaSideCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sea-Side" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/moreinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLICK FOR MORE"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/atributeTxt"
+                android:background="#FDD835"
+                android:onClick="clickedHotel"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                app:srcCompat="@drawable/hotelnavid"
+                android:id="@+id/imageView2"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:text="Hotel Navid"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <RatingBar
+                android:id="@+id/RatingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:numStars="7"
+                android:stepSize="1"
+                android:rating="4"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:id="@+id/location2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RatingBar2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:background="#FDD835"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Mazandaran"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/locationCity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RatingBar2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/location2"
+                android:background="#FDD835"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Sari"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/atributeTxt2"
+                android:layout_below="@id/location2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:textSize="10dp">
+                <CheckBox
+                    android:id="@+id/wifiCheckBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI" />
+
+                <CheckBox
+                    android:id="@+id/parkingCheckBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parking" />
+
+                <CheckBox
+                    android:id="@+id/seaSideCheckBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sea-Side" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/moreinfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLICK FOR MORE"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/atributeTxt2"
+                android:background="#FDD835"
+                android:onClick="clickedHotel"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                app:srcCompat="@drawable/hoteljamejam"
+                android:id="@+id/imageView3"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageView3"
+                android:text="Hotel Jam-e-Jam"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <RatingBar
+                android:id="@+id/RatingBar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView3"
+                android:numStars="7"
+                android:stepSize="1"
+                android:rating="3"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:id="@+id/location3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RatingBar3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView3"
+                android:background="#FDD835"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Hormozgan"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/locationCity3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RatingBar3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/location3"
+                android:background="#FDD835"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Kish"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/atributeTxt3"
+                android:layout_below="@id/location3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView3"
+                android:textSize="10dp">
+                <CheckBox
+                    android:id="@+id/wifiCheckBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI" />
+
+                <CheckBox
+                    android:id="@+id/parkingCheckBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parking" />
+
+                <CheckBox
+                    android:id="@+id/seaSideCheckBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sea-Side" />
+
+                />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/moreinfo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLICK FOR MORE"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/atributeTxt3"
+                android:background="#FDD835"
+                android:onClick="clickedHotel"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                app:srcCompat="@drawable/hoteldariush"
+                android:id="@+id/imageView4"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewTitle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageView4"
+                android:text="Hotel Dariush"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <RatingBar
+                android:id="@+id/RatingBar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView4"
+                android:numStars="7"
+                android:stepSize="1"
+                android:rating="5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:id="@+id/location4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RatingBar4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView4"
+                android:background="#FDD835"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Hormozgan"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/locationCity4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RatingBar4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/location4"
+                android:background="#FDD835"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Kish"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/atributeTxt4"
+                android:layout_below="@id/location4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView4"
+                android:textSize="10dp">
+                <CheckBox
+                    android:id="@+id/wifiCheckBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI" />
+
+                <CheckBox
+                    android:id="@+id/parkingCheckBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parking" />
+
+                <CheckBox
+                    android:id="@+id/seaSideCheckBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sea-Side" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/moreinfo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLICK FOR MORE"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/atributeTxt4"
+                android:background="#FDD835"
+                android:onClick="clickedHotel"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                app:srcCompat="@drawable/hotelesteghlal"
+                android:id="@+id/imageView5"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewTitle5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageView5"
+                android:text="Hotel Enghelab "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <RatingBar
+                android:id="@+id/RatingBar5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView5"
+                android:numStars="7"
+                android:stepSize="1"
+                android:rating="6"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:id="@+id/location5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RatingBar5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView5"
+                android:background="#FDD835"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Tehran"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/locationCity5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RatingBar5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/location5"
+                android:background="#FDD835"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Tehran"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/atributeTxt5"
+                android:layout_below="@id/location5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView5"
+                android:textSize="10dp">
+                <CheckBox
+                    android:id="@+id/wifiCheckBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI" />
+
+                <CheckBox
+                    android:id="@+id/parkingCheckBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parking" />
+
+                <CheckBox
+                    android:id="@+id/seaSideCheckBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sea-Side" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/moreinfo5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLICK FOR MORE"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/atributeTxt5"
+                android:background="#FDD835"
+                android:onClick="clickedHotel"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click on each item for More Information.\nThank You.\n"
+        android:gravity="center"/>
+</LinearLayout>

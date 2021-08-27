@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reserveActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/coverView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/hotelpic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/hotelName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:layout_margin="5dp"
+                        android:text="Name"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/hotelIdMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="PY-1234" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avaialable Room = " />
+                    <TextView
+                        android:id="@+id/availableRoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avaialable Special Room = " />
+                    <TextView
+                        android:id="@+id/availableSpecialRoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2" />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nameBuyer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Ashkan Vedadi"
+                            android:textSize="20sp" />
+                        <LinearLayout
+                            android:id="@+id/startDayLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nameBuyer"
+                            android:layout_marginLeft="10dp">
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:text="StartDay: "
+                                android:textSize="15sp" />
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="day"
+                                android:maxLength="2"/>
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="month"
+                                android:maxLength="2"/>
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="years"
+                                android:maxLength="4"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/finieshdDayLAyout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/startDayLayout"
+                            android:layout_marginLeft="10dp">
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:text="EndDay: "
+                                android:textSize="15sp"/>
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="day"
+                                android:maxLength="2"/>
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="month"
+                                android:maxLength="2"/>
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="years"
+                                android:maxLength="4"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/specialRoomLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@id/finieshdDayLAyout">
+                            <CheckBox
+                                android:id="@+id/spRoom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Special Room"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/bedCountLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@id/specialRoomLayout">
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/oneBed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1 Bed"/>
+
+                                <RadioButton
+                                    android:id="@+id/twoBed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2 Bed"/>
+
+                                <RadioButton
+                                    android:id="@+id/threeBed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3 Bed"/>
+                            </RadioGroup>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/finishReservebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Finish the Reservation"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FDD835"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
+
+

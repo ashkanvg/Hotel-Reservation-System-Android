@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signinActivity"
+    android:background="#FDD835">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/login"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/usernameTxtLogin"
+            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:ems="15"
+            android:gravity="center"
+            android:hint="UserName"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/passwordTxtLogin"
+            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameTxtLogin"
+            android:layout_centerHorizontal="true"
+            android:ems="15"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordTxtLogin"
+            android:layout_centerHorizontal="true"
+            android:text="SUBMIT"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:ems="15" />
+        <TextView
+            android:id="@+id/gotoSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If You Haven't signup yet CLICK Here!"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/submitBtn"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

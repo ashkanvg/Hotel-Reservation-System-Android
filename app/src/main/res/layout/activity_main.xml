@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/hotel">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/signinBtn"
+            android:layout_width="150dp" android:layout_height="70dp"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Sign-in"
+            android:background="@drawable/mainbutton"
+            android:textColor="#D6D0D1"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="150dp" android:layout_height="70dp"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_below="@+id/signinBtn"
+            android:layout_marginTop="2dp"
+            android:text="Sign-up"
+            android:background="@drawable/mainbutton2"
+            android:textColor="#D6D0D1"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
